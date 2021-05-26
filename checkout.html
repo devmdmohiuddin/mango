@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>checkout page</title>
+  </head>
+  <body>
+    <!-- cart header section -->
+    <header class="checkout-header-section">
+      <nav class="full-nav container">
+        <a class="logo" href="index.html"
+          ><img class="logo" src="icons/al_siha_logo.png" alt="Al-Siha"
+        /></a>
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="al-siha-kitchen.html">Al-Siha Kitchen</a></li>
+          <li>
+            <a href="login.html">
+              <img src="icons/cart.png" alt="Cart" />
+            </a>
+          </li>
+          <li>
+            <a href="cart.html">
+              <img src="icons/user-circle.png" alt="User Circle" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container checkout-banner-wrapper">
+        <div class="checkout-banner">
+          <h3>Checkout</h3>
+        </div>
+      </div>
+    </header>
+
+    <!-- payment and order summary section -->
+    <section class="payment-and-order-summary-section">
+      <div class="container payment-and-order-summary-wrapper">
+        <div class="payment-and-order-summary">
+          <div class="payment-and-order-summary-left">
+            <form class="payment">
+              <h4>Personal Information</h4>
+              <div class="personal-information">
+                <input type="text" name="first-name" placeholder="First name" />
+                <input type="text" name="last-name" placeholder="Last name" />
+                <input type="email" name="email" placeholder="Email address" />
+                <input type="tel" placeholder="Mobile" />
+              </div>
+              <h4>Shipping Address</h4>
+              <div class="shipping-address">
+                <input type="text" placeholder="Local address" />
+                <input type="tel" placeholder="Zip code" />
+                <select name="" id="">
+                  <option value="">City</option>
+                  <option value="">Dhaka</option>
+                  <option value="">Cumilla</option>
+                  <option value="">Rajshahi</option>
+                </select>
+                <select name="" id="">
+                  <option value="">Country</option>
+                  <option value="">Bangladesh</option>
+                  <option value="">India</option>
+                  <option value="">Pakistan</option>
+                </select>
+              </div>
+              <h4>Payment</h4>
+              <div class="payment-method">
+                <div>
+                  <input type="radio" name="payment" />
+                  <img src="icons/bkash-radio.png" alt="Bkash" />
+                </div>
+                <div>
+                  <input type="radio" name="payment" />
+                  <img src="icons/nagad-radio.png" alt="Nagad" />
+                </div>
+                <div>
+                  <input type="radio" name="payment" />
+                  <img src="icons/visa-radio.png" alt="Visa" />
+                </div>
+                <div>
+                  <input type="radio" name="payment" />
+                  <p>Cash on Delivery</p>
+                </div>
+              </div>
+              <div class="payment-form">
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email address" />
+                <input type="tel" placeholder="Bkash number" />
+                <div class="checkbox-pera">
+                  <input type="checkbox" />
+                  <p>
+                    I agree to the <a href="#">terms & conditions</a> and
+                    <a href="#">privacy policy.</a>
+                  </p>
+                </div>
+              </div>
+              <button class="btn">Proceed to Pay</button>
+              <button class="btn payment-btn">
+                Back to Cart <img src="icons/arrow.png" alt="Arrow" />
+              </button>
+            </form>
+          </div>
+          <div class="payment-and-order-summary-right">
+            <h5>Order Summary</h5>
+            <ul class="order-summary">
+              <li>
+                <span class="left">Fajjli Aam</span>
+                <span class="right">3 kg</span>
+              </li>
+              <li>
+                <span class="left">Himshagar</span>
+                <span class="right">2 kg</span>
+              </li>
+              <li>
+                <span class="left">Himshagar</span>
+                <span class="right">4 kg</span>
+              </li>
+            </ul>
+            <ul class="price-summary">
+              <li>
+                <span class="left">Product Count</span>
+                <span class="right">3</span>
+              </li>
+              <li>
+                <span class="left">Order ID</span>
+                <span class="right">#94237984238</span>
+              </li>
+              <li>
+                <span class="left">Subtotal</span>
+                <span class="right">1230.00 tk</span>
+              </li>
+              <li>
+                <span class="left">Shipping</span>
+                <span class="right">132.00 tk</span>
+              </li>
+              <li>
+                <span class="left">Total</span>
+                <span class="right">1203.00 tk</span>
+              </li>
+              <li>
+                <span class="left">Payment Method</span>
+                <span class="right">Bkash</span>
+              </li>
+            </ul>
+            <p>
+              <a href="#"
+                ><i class="fas fa-long-arrow-alt-left"></i> Continue Shopping</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer-section">
+      <div class="container footer-top-wrapper">
+        <div class="footer">
+          <div class="quick-links">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="#">Back to Top</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="categories">
+            <h5>Categories</h5>
+            <ul>
+              <li><a href="#">All Categories</a></li>
+              <li><a href="#">Fajli Aam</a></li>
+              <li><a href="#">Harivanga</a></li>
+              <li><a href="#">Himshagar</a></li>
+              <li><a href="#">Lengra</a></li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <h5>Contacts</h5>
+            <ul>
+              <li>
+                <img src="icons/phone.png" alt="Phone" />
+                <span>+8801231231234</span>
+              </li>
+              <li>
+                <img src="icons/mail.png" alt="Mail" />
+                <span>info@mango.com</span>
+              </li>
+              <li>
+                <img src="icons/location.png" alt="Location" />
+                <span
+                  >Street name, Block name, <br />
+                  City, Country</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="social-payment">
+            <div class="social-links">
+              <h5>Social Links</h5>
+              <div>
+                <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
+                <a href="#"
+                  ><img src="icons/instagram.png" alt="Instagram"
+                /></a>
+                <a href="#"><img src="icons/linkedIn.png" alt="Linkedin" /></a>
+                <a href="#"><img src="icons/twitter.png" alt="Twitter" /></a>
+              </div>
+            </div>
+            <div class="payment-methods">
+              <h5>Payment Methods</h5>
+              <div>
+                <img src="icons/visa.png" alt="Visa" />
+                <img src="icons/mastercard.png" alt="Mastercard" />
+                <img src="icons/paypal.png" alt="Paypal" />
+                <img src="icons/apple_pay.png" alt="Apple Pay" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-wrapper">
+        <p>Copyright &copy; Mango | All rights Reserved 2021</p>
+      </div>
+    </section>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
